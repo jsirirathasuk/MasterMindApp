@@ -69,7 +69,7 @@ namespace MasterMindApp
                             }
                         }
 
-                        //Places the "-" or "b" for number
+                        //Places the "-" or " " for digit
                         _answer[j] = misplaced ? '-' : ' ';
                     }
                 }
