@@ -25,8 +25,6 @@ namespace MasterMindApp
             SecretCode sc = new SecretCode();
             EndGame endGame = new EndGame();
             var secretCode = sc.GenerateSecretCode();
-
-            Console.WriteLine($"the SC: {string.Join("", secretCode)}");//delete this 
             bool crackedCode = false;
 
             for (int i = 1; i <= MaxNumberOfAttempts; i++)
@@ -76,7 +74,7 @@ namespace MasterMindApp
                     }
                 }
 
-                Console.WriteLine($"{string.Join("", _answer)}");
+                Console.WriteLine(string.Join("", _answer));
 
                 //Checks to see if the guess was correct
                 crackedCode = endGame.CheckGuess(_answer);
