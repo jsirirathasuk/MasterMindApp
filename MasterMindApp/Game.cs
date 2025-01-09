@@ -21,7 +21,7 @@ namespace MasterMindApp
 
         public string Play()
         {
-            Console.WriteLine("\n\nGame start, good luck!");
+            Console.WriteLine("\nGame start, good luck!");
             SecretCode sc = new SecretCode();
             EndGame endGame = new EndGame();
             var secretCode = sc.GenerateSecretCode();
